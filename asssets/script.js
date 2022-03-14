@@ -55,14 +55,15 @@ function generatePassword() {
   console.log(length)
   var characters = getCharacters();
   console.log (characters)
-  for (let i=0; i< length; i++) {
+  for (var  i=0; i< length; i++) {
    characters[ Math.floor(Math.random()* length )]
-  
-   generatePassword= characters
+  console.log (characters)
+   string= characters 
+   console.log (string)
 
   }
 
-  return generatePassword ()
+  return string
 }
 
 // Get references to the #generate element
