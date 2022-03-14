@@ -10,7 +10,7 @@ Password-generator is an application that randomly generates secure passwords (8
 HTML
 CSS 
 JS
-![](https:https://github.com/youssefkaroui/Password-generator/blob/main/asssets/script.js)
+
 
 ## Website 
 

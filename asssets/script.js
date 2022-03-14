@@ -47,23 +47,23 @@ function getCharacters() {
   }
   return (promptCharacters);
   // return a string
-
+console.log (getCharacters);
 }
 
 function generatePassword() {
   var length = getLength() // get us the length of the password
   console.log(length)
-  var characters = getCharacters();
-  console.log (characters)
+  var characters = getCharacters(); 
+  
+  var password="";
   for (var  i=0; i< length; i++) {
-   characters[ Math.floor(Math.random()* length )]
-  console.log (characters)
-   string= characters 
-   console.log (string)
+   var random= Math.floor(Math.random()* length )
+ 
+   password= password + characters[random];
 
   }
 
-  return string
+  return password;
 }
 
 // Get references to the #generate element
