@@ -26,7 +26,7 @@ function getCharacters() {
     lowers: "abcdefghijklmnopqrstuvwxyz",
     uppers: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     numbers: "0123456789",
-    symbols: "!@#$%^&*()_+?~"
+    symbols: "~!@#$%^&*()_+=-`"
   }
   var promptCharacters = "";
   var wantsLowers = window.confirm("do you want lower case characters?")
@@ -47,12 +47,12 @@ function getCharacters() {
   }
   return (promptCharacters);
   // return a string
-console.log (getCharacters);
+
 }
 
 function generatePassword() {
   var length = getLength() // get us the length of the password
-  console.log(length)
+
   var characters = getCharacters(); 
   
   var password="";
