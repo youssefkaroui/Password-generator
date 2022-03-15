@@ -1,8 +1,5 @@
 // Assignment code here
-for (let i=0 ; i<5 ; i++) {
-  console.log (Math.random() *5 );
 
-}
 
 function getLength() {
   // get length as an input from the user; if input is somehow inocrrect (not a number or not the write number), ask again
