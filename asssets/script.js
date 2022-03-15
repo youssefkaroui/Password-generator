@@ -1,5 +1,8 @@
 // Assignment code here
+for (let i=0 ; i<5 ; i++) {
+  console.log (Math.random() *5 );
 
+}
 
 function getLength() {
   // get length as an input from the user; if input is somehow inocrrect (not a number or not the write number), ask again
@@ -57,7 +60,7 @@ function generatePassword() {
   
   var password="";
   for (var  i=0; i< length; i++) {
-   var random= Math.floor(Math.random()* length )
+   var random= Math.floor(Math.random()* characters.length )
  
    password= password + characters[random];
 
