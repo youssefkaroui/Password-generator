@@ -19,6 +19,27 @@ function getLength ()  {
   return promptLength;
 
 }
+// function to get the desired character type from the user by prompting them to a series of questions
+function getCharacters() {
+  var possibleCharacters ={
+    uppers: "ABCDEFGHIGKLMNOPQRSTUVWXYZ",
+    lowers:"abcdefghijklmnopqrstuvwxyz",
+    numbers: "0123456789",
+    symbols:"~!@#$%^&*()_+=-`"
+  }
+  var promptCharacters="";
+  // if statements for desired character type
+  var wantsUppers = window.confirm(" would you like upper case cgaracters?")
+  if (wantsUppers) {
+    promptCharacters+= possibleCharacters.uppers;
+  }
+  var wantsLowers = window.confirm("would you like lower case characters?")
+  if (wantsLowers) {
+    promptCharacters+=possibleCharacters.lowers;
+  }
+  var 
+}
+
 
 
 // Get references to the #generate element
