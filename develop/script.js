@@ -5,13 +5,13 @@ function getLength ()  {
   var promptLength= window.prompt("What would you like the length of the password to be?")
   promptLength = parseInt (promptLength)
   if (isNaN(promptLength)){
-    window.alert("please enter a numeric value")
+    window.alert("please enter a numeric value");
     return getLength();
 
   }
 
   if (promptLength < 8 || promptLength > 128) {
-    window.alert("please enter a number between 8 and 128")
+    window.alert("please enter a number between 8 and 128");
     return getLength()
     
 
@@ -29,15 +29,36 @@ function getCharacters() {
   }
   var promptCharacters="";
   // if statements for desired character type
-  var wantsUppers = window.confirm(" would you like upper case cgaracters?")
+  var wantsUppers = window.confirm(" would you like upper case characters?");
   if (wantsUppers) {
     promptCharacters+= possibleCharacters.uppers;
   }
-  var wantsLowers = window.confirm("would you like lower case characters?")
+  var wantsLowers = window.confirm("would you like lower case characters?");
   if (wantsLowers) {
     promptCharacters+=possibleCharacters.lowers;
   }
-  var 
+  var wantsNumbers= window.confirm ("would you like numeric characters?");
+  if (wantsNumbers) {
+    promptCharacters+=possibleCharacters.numbers;
+  }
+  var wantsSymbols= window.confirm("would you like symbol characters?")
+  if (wantsSymbols) {
+    promptCharacters+= possibleCharacters.symbols;
+  }
+  return (promptCharacters);
+}
+// generate a password using the user input: getLength and getCharacters
+function generatePassword () {
+  var length = getLength();
+  var characters= getCharacters();
+
+  var password="";
+  for ( i=0; i< length; i++) {
+    var random=Math.floor(Math.random()* characters.length)
+    password=password +characters[random];
+
+  }
+  return password;
 }
 
 
