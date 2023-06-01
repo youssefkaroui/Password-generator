@@ -45,6 +45,12 @@ function getCharacters() {
   if (wantsSymbols) {
     promptCharacters+= possibleCharacters.symbols;
   }
+  if (!wantsLowers & !wantsUppers & !wantsNumbers & !wantsSymbols ) {
+    window.alert("please select at least one character type");
+    return getCharacters();
+    
+
+  }
   return (promptCharacters);
 }
 // generate a password using the user input: getLength and getCharacters
