@@ -1,6 +1,6 @@
 # Password-generator
 
-![alt text](./develop/img/README-screenshot.png) Looks like this 
+![alt text](./assets/img/README-screenshot.png) Looks like this 
 
 ## Purpose
 
